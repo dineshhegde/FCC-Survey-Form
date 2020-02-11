@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap");
+
+
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+:root {
+    --main-bg-color: coral;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+#title {
+    margin-top: 50px;
+    display: block;
+    text-align: center;
+    color: wheat;
+}
+
+#description {
+    text-align: center;
+    margin-top: 10px;
+    font-style: italic;
+    font-size: 1.3rem;
+    color: wheat;
+}
+#survey-form {
+    display: block;
+    width: 50%;
+    min-width: 500px;
+    margin: 50px auto;
+    height: 500px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    padding: 30px;
+}
+#survey-form label {
+    display: block;
+    margin-bottom: 10px;
+    color: wheat;
+    font-size: 1.2rem;
+}
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: var(--main-bg-color);
+    background-image: linear-gradient( 115deg, rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7) ), url(https://raw.githubusercontent.com/lasjorg/fcc-form-example-image/master/67103817-7c51e200-f18b-11e9-975f-f74561336a9a-lj.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
