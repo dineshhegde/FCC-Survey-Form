@@ -38,10 +38,11 @@ body {
     width: 50%;
     min-width: 500px;
     margin: 50px auto;
-    height: 500px;
+    height: auto;
     background: rgba(0, 0, 0, 0.5);
     border-radius: 5px;
     padding: 30px;
+    
 }
 #survey-form label {
     display: block;
@@ -49,6 +50,78 @@ body {
     color: wheat;
     font-size: 1.2rem;
 }
+
+#survey-form input[type=text], 
+#survey-form input[type=email],
+ #survey-form input[type=number],
+ #survey-form select {
+  width:   100%;
+  height: 40px;
+  border-radius: 7px;
+  border: none;
+  padding: 0px 15px;
+  font-size: 1.1rem;
+}
+
+#survey-form select {
+    color: rgba(0,0,0,0.6)
+}
+
+
+
+#survey-form input[type=text]::placeholder, 
+#survey-form input[type=email]::placeholder,
+#survey-form input[type=number]::placeholder,
+#survey-form select {
+    letter-spacing: 1px;
+    font-size: 1.1rem;
+}
+
+#survey-form .input-div {
+    margin: 25px 0;
+}
+
+#survey-form .radio-label,#survey-form .checkbox-label {
+    display: inline;
+    margin: 15px 0;
+}
+#survey-form .radio-wrapper,#survey-form .checkbox-wrapper {
+    margin: 10px 0;
+}
+
+#surver-form input[type="radio"] {
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Chrome, Safari, Opera */
+    transform: scale(1.5);
+}
+
+#survey-form p {
+    color: wheat;
+    font-size: 1.2rem;
+}
+
+#survey-form textarea {
+    width: 100%;
+    resize: none;
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 1.2rem;
+}
+
+#survey-form textarea::placeholder {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+
+}
+
+#submit {
+    width: 100%;
+    height: 45px;
+    background: green;
+    color: white;
+    border: none;
+}
+
 body::before {
     content: '';
     position: fixed;
